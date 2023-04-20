@@ -51,10 +51,8 @@ class MessageManager: ObservableObject {
                  
                
                  querySnapshot?.documentChanges.forEach({ change in
-//                                    if change.type == .added {
                                         let data = change.document.data()
                                         self.chatMessages.append(.init(documentId: change.document.documentID, data: data))
-//                                    }
                                 })
                             }
        }

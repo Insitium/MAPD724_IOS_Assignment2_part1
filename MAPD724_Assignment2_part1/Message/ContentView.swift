@@ -27,7 +27,7 @@ struct ContentView: View {
                             gotoPage4 = true
                         }){
                             HStack {
-                                Image(systemName: "house") // set image here
+                                Image(systemName: "house") 
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(.blue)
                                 Text("Go back")

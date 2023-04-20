@@ -31,7 +31,7 @@ class LocationManager : NSObject, ObservableObject,CLLocationManagerDelegate {
             print("Denied Foreven :(")
             break
             
-        case .notDetermined:        // Authorization not determined yet.
+        case .notDetermined:
             manager.requestWhenInUseAuthorization()
             break
             
@@ -41,7 +41,6 @@ class LocationManager : NSObject, ObservableObject,CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // Insert code to handle location updates
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
